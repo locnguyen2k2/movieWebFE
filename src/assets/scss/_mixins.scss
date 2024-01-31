@@ -1,0 +1,66 @@
+// Global Mixins
+@mixin rows() {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@mixin columns() {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+// Direction
+@mixin absoluteL() {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@mixin absoluteR() {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@mixin mCenter() {
+  margin: 0 auto;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexLeft() {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin textOver3V() {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@mixin textOverH() {
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  inline-size: max-content;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+}
+
+
+// -------------------------
+// Hover 
+@mixin hoverTransition() {
+  transition: all 0.3s ease-in-out;
+}
+
+// ------------------------- 
